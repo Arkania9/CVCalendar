@@ -31,9 +31,9 @@ extension CVCalendarViewAnimator {
         let selectionAnimation = delegate.selectionAnimation()
         let selectionType = calendarView.shouldSelectRange ? CVSelectionType.range(.changed) : CVSelectionType.single
         dayView.setSelectedWithType(selectionType)
-        selectionAnimation(dayView) { _ in
-            //should not do anything here for now. can cause crashs if calender is dismissed before animation is completed.
-        }
+//        selectionAnimation(dayView) { _ in
+//            //should not do anything here for now. can cause crashs if calender is dismissed before animation is completed.
+//        }
     }
 
     public func animateDeselectionOnDayView(_ dayView: DayView) {
