@@ -99,7 +99,7 @@ extension CVCalendarContentViewController {
     func removeCircleLabel(_ dayView: CVCalendarDayView) {
         for each in dayView.subviews {
             if each is UILabel {
-                continue
+                each.removeFromSuperview()
             } else if each is CVAuxiliaryView {
                 continue
             } else {
