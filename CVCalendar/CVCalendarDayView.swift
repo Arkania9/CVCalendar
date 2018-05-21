@@ -235,10 +235,14 @@ extension CVCalendarDayView {
             let shouldShow = delegate.supplementaryView?(shouldDisplayOnDayView: self) ,
             shouldShow {
             if let supView = delegate.supplementaryView?(viewOnDayView: self) {
+              if self.isCurrentDay {
+                dayLabel.textColor = UIColor.white
+              } else {
                 dayLabel.textColor = UIColor(red: 240.0/255.0, green: 140.0/255.0, blue: 167.0/255.0, alpha: 1.0)
-                supplementaryView?.removeFromSuperview()
-                supplementaryView = supView
-                weekView.insertSubview(supView, at: 0)
+              }
+              supplementaryView?.removeFromSuperview()
+              supplementaryView = supView
+              weekView.insertSubview(supView, at: 0)
             }
         } else {
             supplementaryView?.removeFromSuperview()
