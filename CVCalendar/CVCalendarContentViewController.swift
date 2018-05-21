@@ -83,10 +83,10 @@ extension CVCalendarContentViewController {
                 removeCircleLabel(dayView)
                 dayView.setupDotMarker()
                 dayView.preliminarySetup()
-                dayView.supplementarySetup()
                 dayView.topMarkerSetup()
                 dayView.interactionSetup()
                 dayView.labelSetup()
+                dayView.supplementarySetup()
             }
         }
     }
