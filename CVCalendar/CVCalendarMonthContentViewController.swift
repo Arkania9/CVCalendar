@@ -294,13 +294,8 @@ public final class CVCalendarMonthContentViewController: CVCalendarContentViewCo
                     currentMonthView.alpha = 1
                 }) { [weak self] _ in
                     presentedMonth.removeFromSuperview()
-                    self?.selectDayViewWithDay(presentedDate.day, inMonthView: currentMonthView)
                     self?.togglingBlocked = false
                     self?.updateLayoutIfNeeded()
-                }
-            } else {
-                if let currentMonthView = monthViews[presented] {
-                    selectDayViewWithDay(presentedDate.day, inMonthView: currentMonthView)
                 }
             }
         }
