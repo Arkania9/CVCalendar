@@ -240,7 +240,7 @@ extension CVCalendarDayView {
               } else if self.isOut {
                 dayLabel.textColor = .red
               } else {
-                dayLabel.textColor = UIColor(red: 240.0/255.0, green: 140.0/255.0, blue: 167.0/255.0, alpha: 1.0)
+                dayLabel.textColor = .red
             }
               supplementaryView?.removeFromSuperview()
               supplementaryView = supView
