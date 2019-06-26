@@ -166,10 +166,10 @@ extension CVCalendarDayView {
         var font: UIFont? = appearance?.dayLabelWeekdayFont
         var color: UIColor?
         
-        if isDisabled {
-            color = appearance?.dayLabelWeekdayDisabledColor
-        } else if isOut {
+        if isOut {
             color = appearance?.dayLabelWeekdayOutTextColor
+        } else if isDisabled {
+            color = appearance?.dayLabelWeekdayDisabledColor
         } else if isCurrentDay {
             let coordinator = calendarView.coordinator
             if coordinator?.selectedDayView == nil && calendarView.shouldAutoSelectDayOnMonthChange {
