@@ -552,8 +552,8 @@ extension CVCalendarDayView {
         selectionView!.fillColor = backgroundColor
         selectionView!.alpha = backgroundAlpha
         selectionView!.setNeedsDisplay()
-        insertSubview(selectionView!, at: 0)
-        
+//        insertSubview(selectionView!, at: 0)
+      
         moveDotMarkerBack(false, coloring: false)
     }
     
